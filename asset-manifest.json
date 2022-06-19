@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/react-quizzical/static/js/main.9e20dcff.js",
+    "index.html": "/react-quizzical/index.html",
+    "static/media/bg-blobs.svg": "/react-quizzical/static/media/bg-blobs.f0f9b10b076a45fb7dc9b05d20e4b023.svg",
+    "main.9e20dcff.js.map": "/react-quizzical/static/js/main.9e20dcff.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.9e20dcff.js"
+  ]
+}
