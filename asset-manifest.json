@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/react-quizzical/static/js/main.9e20dcff.js",
+    "main.js": "/react-quizzical/static/js/main.358ab656.js",
     "index.html": "/react-quizzical/index.html",
     "static/media/bg-blobs.svg": "/react-quizzical/static/media/bg-blobs.f0f9b10b076a45fb7dc9b05d20e4b023.svg",
-    "main.9e20dcff.js.map": "/react-quizzical/static/js/main.9e20dcff.js.map"
+    "main.358ab656.js.map": "/react-quizzical/static/js/main.358ab656.js.map"
   },
   "entrypoints": [
-    "static/js/main.9e20dcff.js"
+    "static/js/main.358ab656.js"
   ]
 }
