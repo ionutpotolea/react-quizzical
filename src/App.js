@@ -44,10 +44,6 @@ export default function App () {
         }
     }, [quizState.started])
     
-    function countCorrectAnswers(){
-        
-    }
-    
     React.useEffect(() => {
         const answeredQuestions = Object.keys(quizState.userSolutions).length
         if(answeredQuestions){
@@ -66,7 +62,7 @@ export default function App () {
         
     }, [quizState.userSolutions])
     
-    const quizDataElements = quizData.map((quizItem, index) => {
+    const quizDataElements = quizData.map(quizItem => {
         return <Question
             key={quizItem.id}
             index={quizItem.index}
@@ -105,6 +101,16 @@ export default function App () {
     function submitQuiz(){
         setQuizState(prevState => ({...prevState, submitted: true}))
     }
+
+    function resetQuiz(){
+        setQuizState({
+            started: false,
+            submitted: false,
+            userSolutions: {},
+            correctUserAnswers: 0
+        })
+        setQuizData([])
+    }
     
     return (
         <div id="container" style={{ backgroundImage: `url(${background})` }}>
@@ -123,7 +129,7 @@ export default function App () {
                         <div>
                             <span className="result"> You scored {quizState.correctUserAnswers}/{quizData.length} correct answers</span>
                             <button
-                                onClick={() => setQuizState(prevState => ({...prevState, submitted: false}))}
+                                onClick={resetQuiz}
                             >Play Again
                             </button>
                         </div>
